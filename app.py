@@ -128,7 +128,7 @@ model_size = st.sidebar.selectbox("Model Power",
     format_func=lambda x: {"yolov8n.pt":"⚡ Nano (Fastest)","yolov8s.pt":"⚖️ Small (Balanced)","yolov8m.pt":"🎯 Medium (Most Accurate)"}[x])
 st.sidebar.markdown("---")
 st.sidebar.markdown("""<div style='font-family:Space Mono,monospace;font-size:10px;color:#444460;letter-spacing:1px;line-height:2'>
-BUILT BY<br><span style='color:#00ff64'>KUNALJIT DAS</span><br>B.TECH CSE · AKTU<br>YOLOV8 · PYTORCH · CV</div>""", unsafe_allow_html=True)
+BUILT BY<br><span style='color:#00ff64'>KUNALJIT DAS</span><br>B.TECH CSE · TAKU<br>YOLOV8 · PYTORCH · CV</div>""", unsafe_allow_html=True)
 
 @st.cache_resource(show_spinner="Loading Vision AI model…")
 def load_model(name):
