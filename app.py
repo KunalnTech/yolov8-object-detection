@@ -114,9 +114,9 @@ st.markdown("""
     </div>
 </div>
 <div class="stats-row">
-    <div class="stat-card"><div class="stat-value">85%</div><div class="stat-label">mAP Score</div></div>
+   <div class="stat-card"><div class="stat-value">COCO</div><div class="stat-label">Pretrained On</div></div>
     <div class="stat-card"><div class="stat-value">80</div><div class="stat-label">Object Classes</div></div>
-    <div class="stat-card"><div class="stat-value">25+</div><div class="stat-label">FPS Live</div></div>
+    <div class="stat-card"><div class="stat-value">3</div><div class="stat-label">Model Sizes</div></div>
     <div class="stat-card"><div class="stat-value">640px</div><div class="stat-label">Input Resolution</div></div>
 </div>
 """, unsafe_allow_html=True)
