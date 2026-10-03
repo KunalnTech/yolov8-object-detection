@@ -1,15 +1,14 @@
-# Real-time Object Detection with YOLOv8 🎯
+# Object Detection with YOLOv8 🎯
 
-Real-time object detection using **YOLOv8** (Ultralytics) with **PyTorch**. Detects and classifies 80 object categories in images and videos. Deployed as an interactive **Streamlit** web app.
-
+Object detection using **YOLOv8** (Ultralytics, pretrained on COCO) with **PyTorch**. Detects and classifies 80 object categories in images and videos. Includes an interactive **Streamlit** web app for image and video upload, and a command-line script for live webcam detection.
 ## Results
 
-| Metric         | Score       |
+| Item            | Value      |
 |----------------|-------------|
-| mAP@50         | 85%         |
-| Inference Speed| 25+ FPS     |
-| Classes        | 80 (COCO)   |
-| Model          | YOLOv8n     |
+|   Model        |   YOLOv8 pretrained on COCO    |
+| Classes        |   80 (COCO)   |
+|  Training      | None , uses pretrained weights  |
+
 
 ## Project Structure
 
@@ -44,10 +43,11 @@ python detect.py --source path/to/image.jpg
 ```bash
 python detect.py --source webcam
 ```
+Live webcam detection is available through detect.py, not the web app.
 
 ## Tech Stack
 
-- **Model:** YOLOv8n (Ultralytics)
+- **Model:** YOLOv8 n/m/s (Ultralytics, pretrained)
 - **Framework:** PyTorch
 - **Computer Vision:** OpenCV
 - **Frontend:** Streamlit
@@ -59,8 +59,7 @@ python detect.py --source webcam
 2. Feature Pyramid Network (FPN) extracts multi-scale features
 3. Detection head predicts bounding boxes, class labels, and confidence scores
 4. Non-Maximum Suppression (NMS) removes duplicate detections
-5. Results are annotated and displayed in real-time
-
+5.Results are annotated; images are shown in the app, and processed videos are saved to runs/detect/
 ## Sample Detections
 
 Objects detectable include: person, car, bicycle, dog, cat, chair, laptop, phone, bottle, and 70+ more COCO classes.
