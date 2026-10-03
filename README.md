@@ -47,7 +47,7 @@ Live webcam detection is available through detect.py, not the web app.
 
 ## Tech Stack
 
-- **Model:** YOLOv8 n/m/s (Ultralytics, pretrained)
+- **Model:** YOLOv8 n/s/m (Ultralytics, pretrained)
 - **Framework:** PyTorch
 - **Computer Vision:** OpenCV
 - **Frontend:** Streamlit
